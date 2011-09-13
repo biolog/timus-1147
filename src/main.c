@@ -78,8 +78,8 @@ int Rectangle_PointIn(
 	unsigned int y,
 	struct color_rectangle *rect
 ) {
-	if (x >= rect.lx && x =< rect.wx &&
-		y >= rect.ly && x =< rect.wy	
+	if (x >= rect->lx && x <= rect->wx &&
+		y >= rect->ly && x <= rect->wy	
 	)
 		return TRUE;
 	return FALSE;
